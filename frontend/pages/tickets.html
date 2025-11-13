@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="/frontend/style/styles.css">
+    <style>
+        body{
+            background-color: lightblue;
+        }
+
+        form{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        label {display: block;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:  rgb(255, 162, 0);
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:  rgb(255, 162, 0);
+}
+    </style>
+</head>
+<body>
+
+    <marquee><h1>BUY TICKETS NOW</h1></marquee>
+
+
+
+
+
+    <section>
+    <nav>
+        <div>
+        <ul>
+            <li><a href="cinema.html">Now Showing</a></li>
+            <li><a href="#times">Times</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="https://content.numetro.co.za/cineplex.php" target="_blank">External</a></li>
+
+        </ul>
+        </div>
+    </nav>
+    </section>
+
+    <br>
+
+
+
+
+
+
+
+
+
+
+    <section>
+    <form action="action_page.php" method="GET">
+
+        <div><label for="first name"> first name</label>
+        <input type="text" id = "first name" name = "first name" placeholder="first name" required>
+         </div>
+         <br>
+         <p>
+        <div> <label for="last name"> last name</label>
+        <input type="text" id = "last name" name = "last name" placeholder="last name" required>
+       </div>
+           <br>
+       <div>
+        <label for="email adress">email adress</label>
+        <input type="email" id="email adress" name="email adress" placeholder=" email adress" required>
+       </div>
+<br>
+       <label for="phone number"> phone number</label>
+       <input type="number" id="phone number" name="phone number" placeholder="phone number" required>
+
+
+       <div>
+        <br>
+          <label for="ticket number"> ticket number</label>
+       <input type="number" id="ticket number" name="ticket number" placeholder="ticket number" required>
+
+        </div>
+        <div>
+         <br>
+       <input type="reset">
+       </div>
+           <br>
+       <div>
+        <input type="submit">
+       </div>
+      
+        <p>
+        </div>
+        </form>
+
+        </section>
+
+
+
+
+        <footer>(c)2025 | <a href="cinema.html">Back to Home</a></footer>
+</body>
+</html>

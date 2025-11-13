@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT 451 Assignment</title>
+    <link rel="stylesheet" href="/frontend/style/styles.css">
+    <style>
+        .movie-posters {
+            list-style-type: none; 
+            padding: 0;
+            display: flex; 
+            gap: 20px; 
+            justify-content: center; 
+        }
+
+        .poster-container {
+            position: relative; 
+            width: 150px; 
+            height: 225px; 
+            overflow: hidden; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+        }
+        .poster-container:hover {
+             box-shadow: 0 10px 20px rgba(255, 152, 0, 0.8); 
+        }
+        
+        .poster-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            display: block;
+            transition: transform 0.3s ease, filter 0.3s ease; 
+        }
+
+        .movie-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #FF9800; 
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            font-weight: bold;
+            opacity: 0; 
+            transform: translateY(100%); 
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .poster-container:hover .movie-title {
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+
+        .poster-container:hover img {
+            transform: scale(1.05); 
+            filter: brightness(60%); 
+        }
+
+        #box{
+            border:5px solid;
+            width: 50px;
+            height: 250px;
+        }
+
+        body{
+            background-color: #d1f2eb;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Chabu Chembe 202200016
+        <br>
+        Dada Mshisha 202200670
+        <br>
+        Edward Kanoka 202204412
+        <br>
+        Maureen Maseho Chipoya 201905317
+        <br>
+
+
+
+
+        <video src="images/into.mp4" controls="control" width="300px" height="300px" style="display: block;
+  margin: auto;">
+        <br>
+        
+    </div>
+    <header>
+        <div>
+        <h1 style="text-align: center; color: red; text-transform: uppercase; font-family: fantasy; " >Campus Cinema</h1>
+        <video src=""></video>
+        <marquee><h1>NOW SHOWING....</h1></marquee>
+
+
+        <br>
+         
+        
+
+    </header>
+
+
+    <nav>
+        <div>
+        <ul>
+            <li><a href="#featured">Now Showing</a></li>
+            <li><a href="#times">Times</a></li>
+            <li><a href="pages/tickets.html">Tickets</a></li>
+            <li><a href="https://content.numetro.co.za/cineplex.php" target="_blank">External</a></li>
+
+        </ul>
+        </div>
+    </nav>
+
+    <br>
+
+    <h2 style="text-align: center;">Top Picks</h2>
+    <ul id="posters-container" class="movie-posters">
+
+    </ul>
+
+
+    <br>
+    <section id="times">
+    <h2 style="text-align: center;">Show Times</h2>
+    <table bgcolor="black" width="700">
+        <tr bgcolor="grey">
+            <th width="200">Movie</th>
+            <th width="200">Start</th>
+            <th width="200">Hall</th>
+        </tr>
+
+       <tbody id="showtimes-tbody"></tbody>
+    </table>
+    <br>
+    </section>
+
+
+    <section style="
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;" id="featured">
+
+            <h2 style="text-align: center;">Featured</h2>
+
+    <img src="images/poster.jpg" height="300" width="350" style="display: block;
+  margin: auto;">
+   
+
+    <div >
+        <p style="text-align: center;">
+        Superman (2025) is the first film in the new DC Universe,<br> 
+        starring David Corenswet as Clark Kent and Rachel Brosnahan as Lois Lane. <br>
+        The movie isn’t a traditional origin story but follows a younger Superman <br>
+        as he balances his Kryptonian heritage with his human upbringing,<br> 
+        striving to embody hope, compassion, and justice in a complicated world. <br>
+        With Lex Luthor as the main antagonist, the film blends optimism and <br>
+         lightheartedness with darker challenges, <br>
+        aiming to present a noble yet grounded Superman for a new generation.
+        </p>
+</div>
+
+</section>
+
+<footer>(c)2025 | <a href="#top">Back to Top</a></footer>
+
+<script src="cinema.js"></script>
+
+
+</body>
+</html>

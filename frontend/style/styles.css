@@ -1,0 +1,52 @@
+marquee{
+    border:2px solid rgb(255, 162, 0);
+    background-color: #1a1200;
+    padding: 10px;
+    box-shadow: 0 0 20px rgb(255, 162, 0), inset 0 0 10px rgb(255, 162, 0);
+    text-align: center;
+}
+marquee h1{
+    color: rgb(255, 162, 0);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 
+    0 0 5px rgb(255, 162, 0)
+    0 0 10px rgb(255, 162, 0)
+    0 0 20px rgb(255, 162, 0)
+    0 0 40px rgb(255, 162, 0)
+    ;
+    animation: flicker 0.15s infinite;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: orange;
+  display: flex;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th{
+  background-color: #ff9800;
+  color: white;
+  
+
+}
